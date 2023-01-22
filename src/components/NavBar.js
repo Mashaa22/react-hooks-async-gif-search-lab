@@ -1,16 +1,12 @@
 import React from "react";
 
-function NavBar({ color, title }) {
-  const colors = {
-    black: "navbar-inverse",
-    white: "navbar-default",
-  };
+function NavBar({ color, name }) {
 
   return (
-    <nav className={`navbar ${colors[color]}`}>
+    <nav className={color}>
       <div className="container-fluid">
         <div className="navbar-header">
-          <span className="navbar-brand">{title}</span>
+          <span className="navbar-brand">{name}</span>
         </div>
       </div>
     </nav>
